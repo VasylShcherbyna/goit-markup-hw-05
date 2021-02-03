@@ -619,3 +619,9 @@ button.current {
   visibility: hidden;
   display: none;
 }
+/*animation*/
+.transition {
+  transition-property: color;
+  transition-duration: 2050ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
