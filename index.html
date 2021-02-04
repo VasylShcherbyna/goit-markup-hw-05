@@ -13,11 +13,11 @@
     <header class="header">
       <div class="container box-nav">
         <nav class="header-nav">
-            <a href="#" class="logo-link  link-main transition"  >Web<span class="studio link-main transition ">Studio</span> </a>
+            <a href="#" class="logo-link  link-main transition"  >Web<span class="studio link-main ">Studio</span> </a>
                 <ul class="list">
-                <li class="header-li item"><a href="#" class="nav-ul link-main container-studia current transition">Студия</a></li>
-                <li class="header-li item"><a href="./portfolio/portfolio.html" class="nav-ul link-main container-portfolio transition">Портфолио</a></li>
-                <li class="header-li item"><a href="#" class="nav-ul link-main container-kontakty transition">Контакты</a></li>
+                <li class="header-li item"><a href="#" class="nav-ul link-main container-studia current nav-link ">Студия</a></li>
+                <li class="header-li item"><a href="./portfolio/portfolio.html" class="nav-ul link-main container-portfolio nav-link">Портфолио</a></li>
+                <li class="header-li item"><a href="#" class="nav-ul link-main container-kontakty transition nav-link">Контакты</a></li>
             </ul>
         </nav>
             <ul class="list-contakty">
@@ -44,7 +44,7 @@
         <section class="container-button">
           <div class="container  ">
             <h1 class="title-main">Эффективные решения <br/>для вашего бизнеса</h1>
-            <button class="button-main animation" type="button">Заказать услугу</button>
+            <button class="button-main animation data-modal-open" type="button">Заказать услугу</button>
         </div>
         </section>
 <section class="features">
@@ -106,14 +106,23 @@
 <div class="container">
     <h2 class="color-title title-post">Чем мы занимаемся</h2>
     <ul class="box-img">
-        <li class="main-li">
-            <img src="./img/img.png" alt="печатает на клавиатуре" width="370" height="294">
+        <li class="main-li list-img">
+            <div class="thumb">
+            <img  src="./img/img.png" alt="печатает на клавиатуре" width="370" height="294">
+        <p class="label">Десктопные приложения</p>
+        </div>
         </li>
         <li class="main-li">
+            <div class="thumb">
             <img src="./img/img(1).png" alt="держит телефон в руках" width="370" height="294">
+        <p class="label">Десктопные приложения</p> 
+        </div>
         </li>
         <li class="main-li">
+            <div class="thumb">
             <img src="./img/img(2).png" alt="держит планшет в руках" width="370" height="294">
+        <p class="label">Десктопные приложения</p>
+        </div>
         </li>
     </ul>
 </div>
@@ -386,6 +395,16 @@
     </div>
 
      </footer>
+     <div class="backdrop data-modal is-hidden">
+         <div class="modal">
+             <button type="button" class="modal-close-btn data-modal-close">
+                <svg class="icon-close">
+                    <use href="./img/sprite.svg#icon-close-black-18dp-2-1"></use>
+                  </svg>
+             </button>
+            </div>
+     </div>
+     <script src="./modal.js"></script>
     
 </body>
 </html>
